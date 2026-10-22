@@ -90,7 +90,7 @@ class GPTClient:
         payload = {
             "model": self.model,
             "messages": [{"role": "user", "content": input_data.text}],
-            "reasoning_effort": self.reasoning_effort,
+            "enable_thinking": False,
             "max_completion_tokens": self.max_output_tokens,
             "stream": input_data.stream,
         }
